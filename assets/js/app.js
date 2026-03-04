@@ -1,9 +1,10 @@
+//TUMUKUNDE ISIMBI fabiola   25/30779 
+
 function calculateTotal() {
-    const amount = parseFloat(document.getElementById('amount').value) || 0;
-    const price = parseFloat(document.getElementById('price').value) || 0;
+    let quantity = document.getElementById("quantity").value;
+    let price = document.getElementById("price").value;
 
-    document.getElementById('total').value = (amount * price).toFixed(2);
+    if(quantity && price){
+        document.getElementById("total").value = quantity * price;
+    }
 }
-
-document.getElementById('amount').addEventListener('input', calculateTotal);
-document.getElementById('price').addEventListener('input', calculateTotal);
