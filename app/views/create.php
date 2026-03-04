@@ -19,15 +19,15 @@
                 <input type="number">
                 <label for="">price</label>
                 <input type="number" name="" id="">
-                <div id="result-area">
-                    <p id="success-message"> </p>
-                </div>
-                <label for="">Save record</label>
+                <p id="total"></p>
+                <button type="submit">Save record</button>
 
             </form>
         </div>
     </section>
-    
+    <div id="result-area">
+                    <p id="success-message"> </p>
+     </div>
     <table id="records-table" border="1">
         <thead>
             <tr>
